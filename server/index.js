@@ -13,7 +13,9 @@ const publicPath = join(__dirname, "../public");
 
 const app = express();
 const server = createServer();
+
 app.use(express.static(publicPath));
+
 app.use("/uv/", express.static(uvPath));
 app.use("/epoxy/", express.static(epoxyPath));
 app.use("/baremux/", express.static(baremuxPath));

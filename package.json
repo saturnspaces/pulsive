@@ -2,13 +2,25 @@
   "name": "pulsive",
   "version": "1.0.0",
   "description": "aio website",
-  "main": "index.js",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "css": "npx tailwindcss -i src/input.css -o public/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "@mercuryworkshop/bare-mux": "^1.1.0",
+    "@mercuryworkshop/epoxy-transport": "^1.1.0",
+    "@titaniumnetwork-dev/ultraviolet": "^3.1.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "wisp-server-node": "^1.0.4"
   }
 }
