@@ -1,3 +1,4 @@
+@import url(/assets/fonts.css);
 /*
 ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
@@ -563,3 +564,23 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
+
+body {
+  background-color: rgb(42, 37, 133);
+  font-family: "main";
+  color: white;
+}
+.header {
+  font-family: "mainbold";
+  font-size: 48px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.navbar {
+  width: 100vw;
+  height: 7.5vh;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: main;
+    src: url(fonts/reg.otf);
+  }
+  
+  @font-face {
+    font-family: mainbold;
+    src: url(fonts/bold.otf);
+  }
+  @font-face {
+    font-family: mainthin;
+    src: url(fonts/thin.otf);
+  }
