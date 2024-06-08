@@ -24,6 +24,13 @@ app.get("/", (_req, res) => {
     res.sendFile(join(publicPath, "index.html"));
 });
 
+app.post("/autoc", async (req, res) => {
+    const query = req.query;
+    const result = await fetch(`https://duckduckgo.com/ac/?q=${query}&format=json`)
+    .then((response) => response.json());
+    res.status(200).send(result);
+});
+
 app.use((_req, res) => {
     res.status(404).sendFile(join(publicPath, "404.html"));
 });

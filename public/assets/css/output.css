@@ -579,8 +579,52 @@ body {
   cursor: pointer;
 }
 .navbar {
+  margin-top: auto;
   width: 100vw;
   height: 7.5vh;
   background-color: rgba(0, 0, 0, 0.15);
 }
-
+.time {
+  position: relative;
+  top: 3%;
+}
+.searchbox {
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  width: 20vw;
+  height: 25vh;
+  transform: translate(-50%,-50%);
+}
+.search {
+  position: relative;
+  top: 15vh;
+  left: 30vw;
+  text-align: center;
+  height: 7.5vh;
+  color: white;
+  background-color: #3a3a3a9f;
+  backdrop-filter: blur(8px);
+  width: 40vw;
+  background: transparent;
+  border-width: 1px;
+  opacity: 1;
+  border-radius: 15px;
+  border-width: 2px;
+  font-size: 18px;
+  transform-origin: 50% 50%;
+  transition: opacity 0.3s cubic-bezier(.68, -0.55, .16, 1), width 0.3s cubic-bezier(.68, -0.55, .16, 1), height 0.3s cubic-bezier(.68, -0.55, .16, 1);
+}
+.search.hidden {
+  opacity: 0;
+  height: 5vh;
+  width: 35vw;
+}
+.search.expanded {
+  height: 35vh;
+}
